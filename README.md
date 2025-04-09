@@ -1,54 +1,72 @@
-# React + TypeScript + Vite
+# 📘 React Vite Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A quiz application built with **React**, **Vite**, **TypeScript**, **Tailwind CSS**, and **React Router DOM**.  
+This project demonstrates routing, form handling, context management, and state updates with a clean, responsive UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- ⚛️ [React](https://reactjs.org/)
+- ⚡ [Vite](https://vitejs.dev/)
+- 🟦 [TypeScript](https://www.typescriptlang.org/)
+- 🎨 [Tailwind CSS](https://tailwindcss.com/)
+- 🔁 [React Router DOM](https://reactrouter.com/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📁 Project Structure
+
+```
+src/
+│
+├── assets/         # Static files (images, etc.)
+├── components/     # Reusable UI components
+├── constants/      # Enum, dropdowns, config constants
+├── context/        # React Context API for global state
+├── data/           # Static JSON data (like questions)
+├── layouts/        # All the layouts will be here
+├── pages/          # Page-level components for routing
+├── routes/         # Route config / protected routes
+├── types/          # TypeScript types and interfaces
+├── App.tsx         # Main app component with routing
+├── main.tsx        # App entry point
+└── index.css       # Tailwind base styles
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ Getting Started
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/chawlaHitesh/solvative_task.git
+cd solvative_task
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the Development Server
+
+```bash
+npm run dev
+```
+
+---
+
+## 🌐 Routing Example
+
+```tsx
+<BrowserRouter basename="/app">
+  <Routes>
+    <Route path="/" element={<HomePage />} />
+    <Route path="/quiz" element={<QuizPage />} />
+    <Route path="/result" element={<ResultPage />} />
+  </Routes>
+</BrowserRouter>
 ```
