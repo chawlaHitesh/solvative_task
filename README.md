@@ -56,17 +56,3 @@ npm install
 ```bash
 npm run dev
 ```
-
----
-
-## 🌐 Routing Example
-
-```tsx
-<BrowserRouter basename="/app">
-  <Routes>
-    <Route path="/" element={<HomePage />} />
-    <Route path="/quiz" element={<QuizPage />} />
-    <Route path="/result" element={<ResultPage />} />
-  </Routes>
-</BrowserRouter>
-```
