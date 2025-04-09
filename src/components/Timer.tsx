@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useGetAppContext } from "../context/AppDataContext";
 
 const Timer = ({ timeLimit }: { timeLimit: number }) => {

@@ -1,4 +1,3 @@
-import React from "react";
 import logo from "../assets/QUIZMania.png";
 import { Outlet } from "react-router-dom";
 const MainLayout = () => {

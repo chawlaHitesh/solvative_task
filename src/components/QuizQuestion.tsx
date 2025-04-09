@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { useGetAppContext } from "../context/AppDataContext";
 import TopBar from "./TopBar";
 import { useNavigate } from "react-router-dom";
@@ -48,9 +48,9 @@ const QuizQuestion = ({
       navigate("/result");
     }
   };
-  const isCorrect = useMemo(() => {
-    return selected === correctAnswer;
-  }, [selected, correctAnswer]);
+  // const isCorrect = useMemo(() => {
+  //   return selected === correctAnswer;
+  // }, [selected, correctAnswer]);
   return (
     <form
       onSubmit={handleSubmit}

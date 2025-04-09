@@ -1,4 +1,3 @@
-import React from "react";
 import { useGetAppContext } from "../context/AppDataContext";
 
 const QuizPass = ({ percentage }: { percentage: number }) => {
