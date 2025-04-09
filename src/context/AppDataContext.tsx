@@ -34,7 +34,8 @@ const AppDataProvider = ({ children }: { children: React.ReactNode }) => {
   >(undefined);
   useEffect(() => {
     setFilterQuiz(
-      QUIZDATA?.categories?.find((quiz) => quiz.id === formData?.topic)
+      QUIZDATA?.categories?.find((quiz) => quiz.id === formData?.topic) ||
+        QUIZDATA?.categories[0]
     );
   }, [formData?.topic]);
   const [activeQue, setActiveQue] = useState(0);
