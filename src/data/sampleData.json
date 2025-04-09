@@ -1,0 +1,130 @@
+{
+  "categories": [
+    {
+      "id": "js_basics",
+      "name": "JavaScript Basics",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "What is the correct syntax for referring to an external script called 'script.js'?",
+          "options": [
+            "A. <script name='script.js'>",
+            "B. <script href='script.js'>",
+            "C. <script src='script.js'>",
+            "D. <script file='script.js'>"
+          ],
+          "correctAnswer": "C",
+          "timeLimit": 10
+        },
+        {
+          "id": "q2",
+          "question": "Which company developed JavaScript?",
+          "options": [
+            "A. Microsoft",
+            "B. Netscape",
+            "C. Google",
+            "D. Mozilla"
+          ],
+          "correctAnswer": "B",
+          "timeLimit": 10
+        },
+        {
+          "id": "q3",
+          "question": "Inside which HTML element do we put the JavaScript?",
+          "options": [
+            "A. <js>",
+            "B. <scripting>",
+            "C. <script>",
+            "D. <javascript>"
+          ],
+          "correctAnswer": "C",
+          "timeLimit": 10
+        },
+        {
+          "id": "q4",
+          "question": "How do you write 'Hello World' in an alert box?",
+          "options": [
+            "A. msg('Hello World');",
+            "B. alertBox('Hello World');",
+            "C. alert('Hello World');",
+            "D. msgBox('Hello World');"
+          ],
+          "correctAnswer": "C",
+          "timeLimit": 10
+        },
+        {
+          "id": "q5",
+          "question": "How do you create a function in JavaScript?",
+          "options": [
+            "A. function myFunction()",
+            "B. function:myFunction()",
+            "C. create myFunction()",
+            "D. function = myFunction()"
+          ],
+          "correctAnswer": "A",
+          "timeLimit": 10
+        },
+        {
+          "id": "q6",
+          "question": "How do you call a function named 'myFunction'?",
+          "options": [
+            "A. call myFunction()",
+            "B. call function myFunction()",
+            "C. myFunction()",
+            "D. Call.myFunction()"
+          ],
+          "correctAnswer": "C",
+          "timeLimit": 10
+        },
+        {
+          "id": "q7",
+          "question": "How to write an IF statement in JavaScript?",
+          "options": [
+            "A. if i = 5 then",
+            "B. if i == 5 then",
+            "C. if (i == 5)",
+            "D. if i = 5"
+          ],
+          "correctAnswer": "C",
+          "timeLimit": 10
+        },
+        {
+          "id": "q8",
+          "question": "How does a WHILE loop start?",
+          "options": [
+            "A. while i = 1 to 10",
+            "B. while (i <= 10)",
+            "C. while (i <= 10; i++)",
+            "D. while i <= 10"
+          ],
+          "correctAnswer": "B",
+          "timeLimit": 10
+        },
+        {
+          "id": "q9",
+          "question": "How can you add a comment in JavaScript?",
+          "options": [
+            "A. <!-- This is a comment -->",
+            "B. # This is a comment",
+            "C. // This is a comment",
+            "D. * This is a comment *"
+          ],
+          "correctAnswer": "C",
+          "timeLimit": 10
+        },
+        {
+          "id": "q10",
+          "question": "Which operator is used to assign a value to a variable?",
+          "options": [
+            "A. -",
+            "B. *",
+            "C. =",
+            "D. x"
+          ],
+          "correctAnswer": "C",
+          "timeLimit": 10
+        }
+      ]
+    }
+  ]
+}
